@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>ROS2 Quadcopter Simulation | Kaique Fernandes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+        <div id="wrapper">
+            <header id="header">
+                <h1><a href="index.html">Kaique Fernandes</a></h1>
+                <nav class="links">
+                    <ul>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="main">
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <h2>ROS2 Quadcopter Simulation</h2>
+                            <p>C++ | ROS2 | Gazebo</p>
+                        </div>
+                    </header>
+                    <span class="image featured"><img src="images/quadcopter_cover.png" alt="ROS2 Quadcopter Simulation" /></span>
+                    <p>Development of a physics-based Quadcopter simulator with custom rigid-body physics engine, IMU sensor noise models, and camera visualization.</p>
+                    <p>To truly master the mechanics of autonomous flight, I chose to move away from "black-box" physics engines and build my own. 
+                        I developed a high-performance drone simulation (including RK4 integration and Physics), implemented entirely in Modern C++.
+
+                        This project serves as a robust testbed for flight control algorithms, allowing for deep customization of aerodynamic variables and sensor noise profiles.
+                    </p>    
+                        <strong>Core Engineering Strengths:</strong>
+                        <ul>
+                            <li><strong>Custom Physics Implementation:</strong> Developed a full rigid-body dynamics model from first principles, managing complex force and torque vectors without relying on third-party physics middleware.</li>
+                            <li><strong>High-Performance C++:</strong> Optimized the simulation loop in Modern C++ to ensure deterministic execution, critical for real-time control-loop prototyping.</li>
+                            <li><strong>Modular Architecture:</strong> Designed the system to be environment-agnostic; while currently integrated with Gazebo for visualization, the core physics remain decoupled and highly portable.</li>
+                            <li><strong>Sensor Fusion:</strong> I integrated the quadcopter’s onboard camera, bridging the data back into RViz for a real-time pilot's-eye view.</li>
+                        </ul>
+                        
+                    <p>Simulation Result:</p>
+                    <span class="image featured">
+                        <video width="100%" height="auto" controls muted autoplay loop poster="images/quadcopter_screenshot.png">
+                            <source src="images/working_2nd_milestone.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </span>
+
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="projects.html" class="button">Back to Projects</a></li>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+
+                <section id="sidebar">
+                    <section id="intro">
+                        <header>
+                            <h2>Kaique Fernandes</h2>
+                            <p>Software &amp; Robotics Simulation Engineer</p>
+                        </header>
+                    </section>
+                
+                    <section class="blurb">
+                        <h2>Contact me</h2>
+                        <p><a class="icon brands fa-linkedin" href="https://www.linkedin.com/in/kaique-martins-fernandes/"> Kaique Martins Fernandes</a></p>
+                    </section>
+                
+                    <section id="footer">
+                        <p class="copyright">&copy; Kaique Fernandes. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+                    </section>
+                </section>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

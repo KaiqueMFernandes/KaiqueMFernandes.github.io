@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Real-time Simulation Module | Kaique Fernandes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+        <div id="wrapper">
+            <header id="header">
+                <h1><a href="index.html">Kaique Fernandes</a></h1>
+                <nav class="links">
+                    <ul>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="main">
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <h2>Real-time Simulation Module</h2>
+                            <p>C++ | Multithreading</p>
+                        </div>
+                    </header>
+                    <span class="image featured"><img src="images/multi_cover.png" alt="Real-time Simulation Module" /></span>
+                    <p>C++ simulation module for dynamic systems: implementation of multithreading and sensor models (IMU/GNSS).</p>
+                    <p>I designed and implemented a real-time–capable simulation module in modern C++ (C++17), focusing on deterministic 
+                        timing and robust multithreading. The module includes:
+                        <ul>
+                            <li>A modular architecture for dynamic system models</li>
+                            <li>High-frequency update loops with controlled timing behaviour</li>
+                            <li>Thread-safe sensor pipelines (IMU, GNSS) with realistic noise/error injection</li>
+                            <li>Fault-handling logic and recovery routines</li>
+                            <li>Minimal-latency data transfer between threads</li>
+                        </ul>    
+                    </p>
+                    <p>The module is structured around deterministic simulation loops, parallel execution, and clear interfaces for extending physical models and sensor pipelines. 
+                        The results are automatically saved in output/&lt;scenario_name&gt;
+                    </p>
+                    
+                    <p>Result example:</p>
+                    <span class="image">
+                        <img src="images/result_multi.png" 
+                             alt="Real-time Simulation example" 
+                             style="max-width: 600px; width: 100%; height: auto; display: block; margin: 0 auto;" />
+                    </span>
+
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="projects.html" class="button">Back to Projects</a></li>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+
+                <section id="sidebar">
+                    <section id="intro">
+                        <header>
+                            <h2>Kaique Fernandes</h2>
+                            <p>Software &amp; Robotics Simulation Engineer</p>
+                        </header>
+                    </section>
+                
+                    <section class="blurb">
+                        <h2>Contact me</h2>
+                        <p><a class="icon brands fa-linkedin" href="https://www.linkedin.com/in/kaique-martins-fernandes/"> Kaique Martins Fernandes</a></p>
+                    </section>
+                
+                    <section id="footer">
+                        <p class="copyright">&copy; Kaique Fernandes. Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+                    </section>
+                </section>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
